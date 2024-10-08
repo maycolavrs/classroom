@@ -1,0 +1,13 @@
+com\aula05\sesi\enums\StatusPedido.class
+com\aula05\sesi\SesiApplication.class
+com\aula05\sesi\repository\UsuarioRepository.class
+com\aula05\sesi\model\Pedido.class
+com\aula05\sesi\model\Produto.class
+com\aula05\sesi\model\Usuario.class
+com\aula05\sesi\repository\ProdutoRepository.class
+com\aula05\sesi\repository\PedidoRepository.class
+com\aula05\sesi\controller\UsuarioController.class
+com\aula05\sesi\controller\PedidoController.class
+com\aula05\sesi\enums\TipoUsuario.class
+com\aula05\sesi\controller\ProdutoController.class
+com\aula05\sesi\config\WebConfig.class

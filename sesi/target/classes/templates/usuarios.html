@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Usuários</title>
+</head>
+<body>
+<h1>Lista de Usuários</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="usuario : ${usuarios}">
+            <td th:text="${usuario.id}"></td>
+            <td th:text="${usuario.nome}"></td>
+            <td th:text="${usuario.email}"></td>
+            <td th:text="${usuario.telefone}"></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Criar Novo Usuário</h2>
+<form action="#" th:action="@{/usuarios}" th:object="${usuario}" method="post">
+    <label>Nome:</label>
+    <input type="text" th:field="*{nome}" required />
+    <label>Email:</label>
+    <input type="email" th:field="*{email}" required />
+    <label>Telefone:</label>
+    <input type="text" th:field="*{telefone}" required />
+    <button type="submit">Adicionar Usuário</button>
+</form>
+</body>
+</html>
